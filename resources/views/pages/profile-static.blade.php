@@ -1,7 +1,7 @@
 @extends('layouts.app', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
-    @include('layouts.navbars.auth.topnav', ['title' => 'Profile'])
+    @include('layouts.navbars.auth.topnav', ['title' => 'Mi Perfil'])
     <div class="card shadow-lg mx-4 card-profile-bottom">
         <div class="card-body p-3">
             <div class="row gx-4">
@@ -16,7 +16,7 @@
                             Sayo Kravits
                         </h5>
                         <p class="mb-0 font-weight-bold text-sm">
-                            Public Relations
+                            Familiar
                         </p>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                                 <a class="nav-link mb-0 px-0 py-1 active d-flex align-items-center justify-content-center "
                                     data-bs-toggle="tab" href="javascript:;" role="tab" aria-selected="true">
                                     <i class="ni ni-app"></i>
-                                    <span class="ms-2">App</span>
+                                    <span class="ms-2">Información</span>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="text-uppercase text-sm">User Information</p>
+                        <p class="text-uppercase text-sm">Información de usuario</p>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <hr class="horizontal dark">
-                        <p class="text-uppercase text-sm">Contact Information</p>
+                        <p class="text-uppercase text-sm">Información de contacto</p>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
