@@ -18,12 +18,12 @@
                                     <div class="d-flex">
                                         <div class="d-flex">
                                             <div class="me-4">
-                                                <p class="text-white text-sm opacity-8 mb-0">Card Holder</p>
-                                                <h6 class="text-white mb-0">Jack Peterson</h6>
+                                                <p class="text-white text-sm opacity-8 mb-0">BBVA</p>
+                                                <h6 class="text-white mb-0">Alison Aguirre</h6>
                                             </div>
                                             <div>
-                                                <p class="text-white text-sm opacity-8 mb-0">Expires</p>
-                                                <h6 class="text-white mb-0">11/22</h6>
+                                                <p class="text-white text-sm opacity-8 mb-0">Expira</p>
+                                                <h6 class="text-white mb-0">10/24</h6>
                                             </div>
                                         </div>
                                         <div class="ms-auto w-20 d-flex align-items-end justify-content-end">
