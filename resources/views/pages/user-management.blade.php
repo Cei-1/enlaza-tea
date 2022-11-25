@@ -41,7 +41,7 @@
                                         <p class="text-sm font-weight-bold mb-0">Admin</p>
                                     </td>
                                     <td class="align-middle text-center text-sm">
-                                        <p class="text-sm font-weight-bold mb-0">22/03/2022</p>
+                                        <p class="text-sm font-weight-bold mb-0">23/07/2022</p>
                                     </td>
                                     <td class="align-middle text-end">
                                         <div class="d-flex px-3 py-1 justify-content-center align-items-center">
