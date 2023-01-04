@@ -13,12 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('calificacion_multimedia', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('codigo_cal')->unique();
+            $table->string('calificacion');
+            $table->string('comentaio_cal');
+            $table->date('fecha_cal');
+            $table->bigInteger('id_usuario');
+
+            $table->foreign('id_usuario')->references('id')->on('users');
             $table->timestamps();
         });
     }
@@ -30,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('calificacion_multimedia');
     }
 };
