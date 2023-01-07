@@ -26,6 +26,7 @@ use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
 use App\Http\Controllers\ExampleComponentController;
 use App\Http\Controllers\InicioController;
+use App\Http\Controllers\NosotrosController;
 
 Route::get('/', function () {return redirect('/dashboard');})->middleware('auth');
 	Route::get('/register', [RegisterController::class, 'create'])->middleware('guest')->name('register');
@@ -39,6 +40,7 @@ Route::get('/', function () {return redirect('/dashboard');})->middleware('auth'
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('home')->middleware('auth');
 	Route::get('/exampleC', [ExampleComponentController::class, 'index'])->middleware('guest')->name('exampleCompo');
 	Route::get('/inicio', [InicioController::class, 'index'])->middleware('guest')->name('inicio');
+	Route::get('/nosotros', [NosotrosController::class, 'index'])->middleware('guest')->name('nosotros');
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('/virtual-reality', [PageController::class, 'vr'])->name('virtual-reality');
 	Route::get('/rtl', [PageController::class, 'rtl'])->name('rtl');
