@@ -37,6 +37,7 @@
     --bs-light: #e9ecef;
     --bs-dark: #344767;
     --bs-white: #fff;
+    --bs-blue-secondary:#b4cef6;
     --bs-primary-rgb: 47, 109, 241;
     --bs-secondary-rgb: 131, 146, 171;
     --bs-success-rgb: 45, 206, 137;
@@ -623,7 +624,7 @@ progress {
 }
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
 }
 
@@ -18244,6 +18245,11 @@ label,
     background-image: linear-gradient(310deg, #212229 0%, #212529 100%);
 }
 
+.bg-gradient-indigo {
+    background-image: linear-gradient(310deg, #596cff 0%, #596cff 100%);
+}
+
+
 .bg-gradient-faded-primary {
     background-image: radial-gradient(
         370px circle at 80% 50%,
@@ -23399,56 +23405,57 @@ pre[class*="language-"] {
         overflow: auto !important;
     }
 }
-
-/**Nosotros**/
-.nosotros {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    align-items: center;
-   
-}
+/**Inicio**/
 @media (min-width: 768px) {
-    .nosotros {
+    /* .inicio, */
+    .ofrecemos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+}
+/**Nosotros**/
+@media (min-width: 768px) {
+    .nosotros,
+    .sobre-nosotros__lista {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
 }
-.nosotros__imagen {
-    grid-row: 1/2;
-    width: 100%;
+.sobre-nosotros__lista {
+    text-align: left;
 }
-@media (min-width: 768px) {
-  .nosotros__imagen {
-      grid-column: 2 / 3;
-  }
+.titulo,
+.nosotros_contenido__titulo{
+    background-color: var(--bs-blue-secondary);
 }
-/**Mision - Vision**/
+/**Separacion linea**/
+.sobre-nosotros,
+.nosotros {
+    border-bottom: 1px solid var(--bs-info);
+    padding: 2rem 0;
+}
 
-@media (min-width: 768px) {
-  .dos-columnas{
-      display: flex;
-      justify-content: space-between;
-      padding: 2rem;
-  }
-
-  .informacion-mv{
-      flex: 0 0 calc(50% - 1rem);
-  }
+.entrada:last-of-type {
+    /*Evita que se repita en el ultimo elemento*/
+    border: none;
+    margin-bottom: 0;
 }
 /**Valores**/
-.justify-content-end-media{
-  justify-content: inherit !important;
+.justify-content-end-media {
+    justify-content: inherit !important;
 }
 
 .justify-content-center-media {
-  justify-content: center !important;
+    justify-content: center !important;
 }
 
 @media (min-width: 768px) {
-  .justify-content-center-media {
-    justify-content: flex-start !important;
-  }
-  .justify-content-end-media {
-    justify-content: flex-end !important;
-  }
+    .justify-content-center-media {
+        justify-content: flex-start !important;
+    }
+    .justify-content-end-media {
+        justify-content: flex-end !important;
+    }
 }
