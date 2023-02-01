@@ -52,3 +52,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/{page}', [PageController::class, 'index'])->name('page');
 	Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 });
+
+/* Rutas protegidas*/
+Route::get('/familiares',[familiaresController::class,'vista'])->name('familiares')->middleware('validarRol:familiares');
+Route::get('/especialistas',[especialistasController::class,'vista'])->name('especialistas')->middleware('validarRol:especialistas');
