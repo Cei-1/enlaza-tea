@@ -23,31 +23,43 @@
                                             <center><img src="/img/Marie.jpg"></center>
                                             <h4>Luisa Angela Pacheco</h4>
                                             <p>Especialista reconocida</p>
-                                                <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}">
-                                                    <span class="nav-link-text ms-1">Conocelo</span>
-                                                </a>
-                                            
+                                            <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}">
+                                                <span class="nav-link-text ms-1">Conoce más</span>
+                                            </a>
+
                                         </div>
 
                                         <div class="card">
                                             <center><img src="/img/team-1.jpg"></center>
-                                            <h4>Recomendaciones</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-                                            <a href="https://www.facebook.com/BrianAG07/">Like</a>
+                                            <h4>Daniela Horta Delgado</h4>
+                                            <p>Doctor</p>
+                                            <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}">
+                                                <span class="nav-link-text ms-1">Conoce más</span>
+                                            </a>
                                         </div>
 
                                         <div class="card">
                                             <center><img src="/img/bruce-mars.jpg"></center>
-                                            <h4>Tecnología</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-                                            <a href="#">Leer más</a>
+                                            <h4>Brian Aguirre Guerra</h4>
+                                            <p>Especialista</p>
+                                            <a class="nav-link {{ Route::currentRouteName() == 'profile' ? 'active' : '' }}" href="{{ route('profile') }}">
+                                                <span class="nav-link-text ms-1">Conoce más</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
+                            <tr>
+
+                            </tr>
                         </tbody>
+
                     </table>
+                 
                 </div>
+                <a class="nav-link {{ str_contains(request()->url(), 'user-management') == true ? 'active' : '' }}" href="{{ route('page', ['page' => 'user-management']) }}">
+                        <span class="nav-link-text ms-1">Ver más</span>
+                    </a>
             </div>
         </div>
     </div>
@@ -69,21 +81,64 @@
                                             <center><img src="/img/tea-3.jpeg"></center>
                                             <h4>Tips</h4>
                                             <p>Especialista reconocido</p>
-                                            <a href="https://www.facebook.com/luisangel.pacheco.986">Ver más</a>
+                                            <a href="/img/tea-3.jpeg">Ver más</a>
                                         </div>
 
                                         <div class="card">
                                             <center><img src="/img/tea-4.jpeg"></center>
                                             <h4>Sabias que?</h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-                                            <a href="https://www.facebook.com/BrianAG07/">Ver más</a>
+                                            <a href="/img/tea-4.jpeg">Ver más</a>
                                         </div>
 
                                         <div class="card">
                                             <center><img src="/img/tea-5.jpg"></center>
                                             <h4>Visitanos</h4>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-                                            <a href="#">Ver más</a>
+                                            <a href="/img/tea-5.jpg">Ver más</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-12 mb-lg-0 mb-4">
+            <div class="card ">
+                <div class="card-header pb-0 p-3">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="mb-2">Nuevos Podcast</h6>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table align-items-center ">
+                        <tbody>
+                            <tr>
+                                <td class="w-30">
+                                    <div class="container_dashboard_family">
+                                        <div class="card">
+                                            <center><img src="/img/Disc-1.jpg"></center>
+                                            <h4>Tips</h4>
+                                            <p>Especialista reconocido</p>
+                                            <a href="/aud/audio-0001.mp3">Escuchame</a>
+                                        </div>
+
+                                        <div class="card">
+                                            <center><img src="/img/Disc-1.jpg"></center>
+                                            <h4>Sabias que?</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                                            <a href="/aud/audio-0001.mp3">Escuchame</a>
+                                        </div>
+
+                                        <div class="card">
+                                            <center><img src="/img/Disc-1.jpg"></center>
+                                            <h4>Visitanos</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
+                                            <a href="/aud/audio-0001.mp3">Escuchame</a>
                                         </div>
                                     </div>
                                 </td>
