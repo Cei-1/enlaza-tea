@@ -23459,3 +23459,52 @@ pre[class*="language-"] {
         justify-content: flex-end !important;
     }
 }
+
+/*.container_dashboard_family creado para las publicaciones de la pagina principal del perfil del fanmiliar*/
+.container_dashboard_family{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container_dashboard_family .card{
+    width: 280px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container_dashboard_family .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+}
+
+.container_dashboard_family .card img{
+    width: 300px;
+    height: 220px;
+}
+
+
+.container_dashboard_family .card h4{
+    font-weight: 600;
+}
+
+.container_dashboard_family .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container_dashboard_family .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
