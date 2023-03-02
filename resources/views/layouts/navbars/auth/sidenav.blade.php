@@ -1,5 +1,9 @@
 <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
     id="sidenav-main">
+    @if(Auth::check())
+    <meta name="user-id" content="{{ Auth::user()->id }}">
+    <meta name='userag' content="{{ Auth::user()->tipoUsuario }}">
+    @endif
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
@@ -12,6 +16,7 @@
     <hr class="horizontal dark mt-0">
     <div class="w-auto " id="sidenav-collapse-main">
         <ul class="navbar-nav">
+        @if (auth()->user()->tipoUsuario=="0")
             <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">
                     <div
@@ -57,5 +62,6 @@
                 </a>
             </li>
         </ul>
+        @endif
     </div>  
 </aside>
