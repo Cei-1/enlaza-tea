@@ -7,9 +7,9 @@
                     <script>
                         document.write(new Date().getFullYear())
                     </script>,
-                    hecho<i class="fa fa-heart"></i> por
+                    hecho por
                     <a href="https://www.facebook.com/consultoriaCEI" class="font-weight-bold" target="_blank">Consultoria Eterna Innovación</a>
-                    para Enlaza-TEA
+                    para Enlaza-TEA <i class="fa fa-heart"></i>
                 </div>
             </div>
             <div class="col-lg-6">
